@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "4164a4bd-9131-4151-a9ca-3ecd8f702aa8",
+		"name": "Issues",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21764065"
+	},
+	"item": [
+		{
+			"name": "create new issue",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"new issues 2\",\n    \"description\": \"this is new issue\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/issues",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"issues"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get issues",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/issues",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"issues"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get issue by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/issues/666bea1fd72e208cd688b8fe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"issues",
+						"666bea1fd72e208cd688b8fe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete issue by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/issues/666bea1fd72e208cd688b8fe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"issues",
+						"666bea1fd72e208cd688b8fe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update issue by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"update new issues\",\n    \"description\": \"this is an update new issue\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/issues/666bea1fd72e208cd688b8fe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"issues",
+						"666bea1fd72e208cd688b8fe"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

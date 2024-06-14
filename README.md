@@ -2,7 +2,7 @@
 
 ## API Challenge for Fullstack Engineer @SiteMates 👩🏼‍🚀
 
-Hey 👋  Thank you for taking the time to review my work 🙂
+Thank you for giving me this opportunity 👋 
 
 ### Description
 
@@ -50,12 +50,13 @@ ___
 ### Any improvements you would like to make?
 I know that this solution may not be perfect. If I have  more time further developing it, I would concentrate on these areas:
 
-- Improve API schema error responses to provide a better client experience like alert or pop-up.
-- Implement proper authentication using JWT to secure the API.
-- Optimize Mongo queries to populate more details.
-- Make UI more nice!
-- Refine the project structure and layout (some configurations could be cleaned up).
-- Provide unit-test and integration test
+- Improve a better client experience like alert or pop-up.
+- Implement authentication using JWT to secure the API and cor options.
+- Optimize Mongo queries to populate more details of issue objects and make relational data to another table e.g. an user who create an issue.
+- Make UI more nice!.
+- Restructure and cleaned up.
+- Deploy to the live-server that you don't need to run locally to play around. 
+- Provide unit-test and integration test.
 
 ### Installation
 

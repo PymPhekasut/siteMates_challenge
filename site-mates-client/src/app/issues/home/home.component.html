@@ -1,0 +1,25 @@
+
+
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let issue of allissues">
+        <th scope="row"> {{ issue._id}} </th>
+        <td> {{ issue.title }} </td>
+        <td> {{ issue.description }} </td>
+        <td>  <a href="" class="btn btn-primary" [routerLink]="['/issues/edit', issue._id]">Edit </a>
+          <button type="button" (click)="deleteIssue(issue._id)" class="btn btn-danger ms-2">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

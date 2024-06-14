@@ -1,0 +1,15 @@
+
+<div class="container">
+  <legend> Edit issue</legend>
+  <form>
+    <div class="mb-3">
+      <label for="txtTitle" class="form-label"> Title </label>
+      <input type="text" name="title" [(ngModel)]="formdata.title" class="form-control" id="txtTitle" />
+    </div>
+    <div class="mb-3">
+      <label for="txtDesc" class="form-label"> Description </label>
+      <input type="text" name="desc" [(ngModel)]="formdata.description" class="form-control" id="txtDesc" />
+    </div>
+    <button type="button" (click)="update()" class="btn btn-primary"> Update </button>
+  </form>
+</div>
